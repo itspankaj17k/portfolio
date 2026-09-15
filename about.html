@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/23d4f1e1b6.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="projects-header">
+        <div class="container">
+
+            <nav>
+                <!----- <img src="logo4.jpg" class="logo">  -->
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="project.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <!-- <img src="icon/cute.jpg"> -->
+                    <div class="button-group ">
+                        <!-- <a href="project.html" class="btn">View Projects</a> -->
+                        <!-- <a href="resume.pdf" class="btn">Hire me</a> -->
+                    </div>
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title header-text">About Me</h1>
+                    <p><strong><b>Hello! I'm Pankaj Kumar, </strong></b>
+                        A Supply Chain and Warehouse Operations professional with over 3 years of experience in
+                        inventory management, SAP EWM, warehouse automation.
+                        Currently working as a Supply Chain Officer at Marico India Ltd. 
+                        <br>I specialize in managing end-to-end warehouse processes, inventory control,
+                        inbound and outbound operations, ASRS systems, and transportation coordination.
+                        <br>My expertise includes SAP EWM, Power BI, Advanced Excel, VBA Macros, Office Scripts,
+                        Google Apps Script, Grafana, and workflow automation
+                        <br>I am passionate about leveraging data-driven insights and automation solutions to
+                        improve operational efficiency, inventory accuracy, and supply chain performance.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Warehouse Tools:</span><br>SAP EWM, SAP MM,WMS </li>
+                            <li><span>Data & Analysis Tools: </span><br> Power BI, Grafana, NEXS, Concinity </li>
+                            <li><span>Software</span><br>MS Excel, MS Word, Google Sheets, VBA , Office Script</li>
+                            <li><span>Documentation & Reporting:</span><br> Operational Reports, Shift Planning, SOP Creation</li>
+                            <li><span>Leadership & Teamwork:</span><br>Team Management, Collaboration </li>
+                            <li><span>Communication:</span><br> Interpersonal & Stakeholder Management</li>
+                            <li><span>Time Management:</span><br>Prioritization, Multitasking</li>
+                            <li><span>Decision Making:</span><br>Decision-Making Under Pressure</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span> B.tech In Information Technology [2023-2026]  </span>7.1 CGPA<br> 
+                                B.N.COLLEGE OF ENGINEERING & TECHNOLOGY(BNCET),LUCKNOW</li>
+                                <li><span>Diploma in Mechanical Engineering[2019-2022]  </span>  77%<br>
+                                    Government Polytechnic Gorakhpur • Gorakhpur, Uttar Pradesh </li>
+                                <li><span>Intermediate [2018-2019]  </span> 66% <br>
+                                S.K.A.R.V.I.C. Maghar Sant Kabir Nagar • Sant Kabir Nagar, Uttar Pradesh </li>
+                                <li><span>High School [2016-2017] </span> 79%<br>
+                               S.K.A.R.V.I.C. Maghar Sant Kabir Nagar • Sant Kabir Nagar, Uttar Pradesh</li>    
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <ul>
+                                <li><span> Supply Chain Officer - Marico India Ltd   </span> February 2026 - Present
+                               <br>
+                                    • Managed PO validation, ASN creation, IBD generation, unloading, and GRN processing in SAP EWM.
+                               <br>• Executed OBD/ODO creation, warehouse task management, picking, loading, goods issue,
+                               and dispatch activities
+                               <br>• Maintained inventory accuracy through cycle counting, stock audits, reconciliation, and
+                               discrepancy resolution
+                           <br>• Supervised warehouse activities and ASRS systems to ensure efficient storage, retrieval, and
+                           material movement.
+                           <br>• Coordinated vehicle planning, transporter management, dock allocation, and
+                           shipment execution for on-time deliveries.
+                           <br>• Managed order processing, inventory allocation, and dispatch execution to achieve servicelevel targets.
+                           <br>• Generated MIS reports, monitored KPIs, and leveraged SAP EWM, Power BI, and Excel for
+                           operational insights.
+                           <br>• Collaborated with Procurement, Planning, Production, Logistics, and Vendor teams to ensure
+                           seamless supply chain operations.
+                           <br>• Developed and implemented SOPs, process controls, and continuous improvement
+                           initiatives.
+                           <br>• Led warehouse manpower while ensuring adherence to safety, quality, FIFO/FEFO, and EHS
+                           standards.  
+                       </li>
+   
+                               <li><span>Executive - Lenskart Solutions Ltd </span>January 2023 - February 2026
+                                   <br>• Maintained inventory accuracy through cycle counting, stock audits, reconciliation, and
+                                   variance analysis while ensuring system and physical stock alignment.
+                                   <br>• Managed end-to-end inbound processes including material receiving, GRN
+                                   processing, putaway, replenishment, bin management, and inventory organization in WMS.
+                                   <br>• Supervised warehouse operations and ASRS activities, ensuring efficient storage, retrieval,
+                                   order processing, space utilization, and smooth material flow across the supply chain.
+                                   <br>• Coordinated order fulfillment, dispatch planning, and Next-Day Delivery (NDD)
+                                   operations while resolving customer escalations and ensuring service-level adherence.
+                                   <br>• Utilized Power BI, Grafana, NEXS, and Concinnity to analyze operational performance, monitor
+                                   KPIs, generate MIS reports, and support data-driven decision-making.
+                                   <br>• Led teams of 30–40 associates, managed workforce planning, developed SOPs, and
+                                   implemented continuous improvement initiatives to enhance productivity and operational efficiency.
+                                   <br>• Ensured compliance with safety regulations, PPE requirements, warehouse standards,
+                                   FIFO/FEFO practices, inventory controls, and proper handling of damaged and returned inventory.</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------Footer Contact Section -------------------->
+  
+  <div class="copyright">
+    <section class="section youtube">
+    <h2>Let’s Connect</h2>
+    <p>Email: pankaj351033@gmail.com</p>
+    <div class="contact-icons">
+      <!-- <a href="https://github.com/itspankaj17k" target="_blank"><i class="fab fa-github"></i></a> -->
+      <a href="https://www.linkedin.com/in/pankaj1017k/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="mail::pankaj351033@gmail.com"> <i class="fa-solid fa-envelope"></i></a>
+
+  </section>
+      <p>Copyright @ Pankaj Kmar.Made with <i class="fa-solid fa-smile"></i></p>
+    </div>
+    </div>
+    <script>function opentab(tabname) {
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+            // Show about-content only after clicking tab
+            document.getElementById("about-content").style.display = "block";
+        }</script>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }            
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxL_Xs_owvdgbFdxDiOadDNF12O8i1NkCewhNKq-vNZxUuOAaigXgejztSgloclpnQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent sucessfully!"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>

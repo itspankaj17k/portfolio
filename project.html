@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Personal Portfolio Website</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/23d4f1e1b6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<!----------navigation header ------------->
+  <div id="projects-header">
+    <div class="container">
+      <nav>
+        <ul id="sidemenu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="project.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <i class="fa-solid fa-square-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+      </nav>
+    </div>
+  </div>
+
+  <!--------------- project section  --------------->
+  <div class="headers-texts">
+    <p>Turning Manual Processes into Automation</p>
+    <h1>Hi, I'm <span>Pankaj Kumar</span></h1>
+    <h2>Explore My Work — Where Operations Meet Innovation</h2>
+    <p>
+      Every project tells a story beyond the numbers.
+
+From turning manual processes into automation to transforming data into actionable insights,
+each project reflects my approach to solving real-world operational challenges.
+Welcome to my world of Data, Automation & Operations.
+    </p>
+  </div>
+  <div class="project-section">
+
+     <div class="project-card">
+      <!-- Project Image
+      <div class="project-image">
+        <img src="icon/meme.jpeg" alt="meme application">
+      </div> -->
+      <!-- Project Description -->
+    
+  <div class="project-description">
+      <h2>Automated Inventory Reconciliation System – SAP EWM & WES</h2>
+      <p><strong>Tech Stack:<strong> Microsoft Office Scripts, Excel, SAP EWM, WES (Systore), Pivot Tables, Data Automation</strong>
+   </p>
+        <p>
+          Developed a one-click automated inventory reconciliation system using Microsoft Office
+          Scripts to compare Handling Units (HUs) between SAP-EWM and Systore WES based on unique
+          HU numbers. The automation identifies and separates unmatched inventory from both systems,
+          copies the exceptions into dedicated sheets, and generates automated Pivot Tables to provide
+          crane-wise inventory visibility across Crane 1, Crane 2, and Crane 3. Improved exception identification
+          and reconciliation visibility, enabling faster investigation and correction of inventory discrepancies.
+          Reduced daily reconciliation time from approximately 1–1.3 hours to just 2–5 minutes.</p>
+
+          <a href="#" class="btn">View Project</a>
+      </div>
+  </div>
+  </div>
+    
+      <div class="project-card">
+        <!-- Project Image -->
+        <!-- <div class="project-image">
+          <img src="icon/airline.png" alt="College Website">
+        </div> -->
+        <!-- Project Description -->
+        <div class="project-description">
+          <h2>Vendor Coordination and Real-Time Logistics Tracking System</h2>
+          <p><strong>Tech Stack:</strong>Google Apps Script, Google Sheets, SQL, MySQL</p>
+          <p>
+           Developed a Google Apps Script and Google Sheets-based system for real-time PO, vendor, and order tracking.
+           Automated data monitoring, analyzed vendor performance, and improved JIT order visibility.
+           Helped reduce average vendor lead time from 3–4 days to ~1 day through systematic tracking and vendor coordination.
+ </p>
+          <a href="" class="btn">View Project</a>
+        </div>
+      </div>
+   
+  
+  
+    <div class="project-card">
+       <!-- Project Image -->
+      <!-- <div class="project-image">
+        <img src="icon/college.png" alt="College Website">
+      </div>
+      <!-- Project Description -->
+      <div class="project-description">
+        <h2>Automated Excel Data Consolidation & JIT Order Analysis System</h2>
+        <p><strong>Tech Stack:</strong>Excel VBA, Excel Automation,  Data Automation</p>
+        <p>
+          Developed a VBA-based automation solution to merge multiple Excel and CSV files into
+          a centralized dataset, automatically filter and classify prescription lens data, perform
+          VLOOKUP-based data enrichment, calculate order aging, and generate dynamic Pivot Reports.
+          Automated repetitive data-processing tasks, reduced manual effort, improved data accuracy,
+          and enabled faster analysis of JIT order and inventory-related information.
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+
+  <!-----------Footer Contact Section -------------------->
+  
+  <div class="copyright">
+    <section class="section youtube">
+    <h2>Let’s Connect</h2>
+    <p>Email: pankaj351033@gmail.com</p>
+    <div class="contact-icons">
+      <a href="" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/pankaj1017k/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    
+  </section>
+      <p>Copyright @ Pankaj Kumar.Made with <i class="fa-solid fa-heart"></i></p>
+    </div>
+    </div>
+  <script>function opentab(tabname) {
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (let tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+
+      // Show about-content only after clicking tab
+      document.getElementById("about-content").style.display = "block";
+    }
+    </script>
+
+  <script>
+  var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }            
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxL_Xs_owvdgbFdxDiOadDNF12O8i1NkCewhNKq-vNZxUuOAaigXgejztSgloclpnQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+        .then(response => {
+          msg.innerHTML = "Message sent sucessfully!"
+          setTimeout(function () {
+            msg.innerHTML = ""
+          }, 5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
